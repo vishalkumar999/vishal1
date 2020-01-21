@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Days</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.maindiv{
+			height: 100vh;
+			width: 100%;
+			background-color: #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		#day{
+			color:#fff;
+			font-size: 100px;
+			font-family: monospace;
+		}
+	</style>
+	
+</head>
+<body>
+
+<div class="maindiv">
+	<p id="day"></p>
+	
+</div>
+
+<script>
+	"use strict"
+	let x = new Date().getTime();
+		x = x/1000;
+		x = Math.floor(x);
+
+	let y = new Date(2019,5,27).getTime();
+		y = y/1000;
+		y = Math.floor(y);
+
+	let z = x - y;
+		z = z/(60*60*24);
+		z = Math.floor(z);
+	// console.log(z);
+	document.getElementById('day').innerHTML = z;
+</script>	
+</body>
+</html>
