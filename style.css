@@ -16,7 +16,7 @@ body{background-color: #b1b1b1;}
 #header-section{
     /* border: 2px solid chartreuse; */
     height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/background.jpg');
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('background.jpg');
     margin: 0px auto;
     background-repeat: no-repeat;
     background-size: cover;
